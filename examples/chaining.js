@@ -25,7 +25,7 @@ var addNewUserToDatabaseAsync = function(user) {
 
 addNewUserToDatabaseAsync({ name: 'Dan', password: 'chickennuggets' })
   .then(function(savedUser) {
-    console.log('All done!');
+    console.log('All done!', savedUser);
   })
   .catch(function(err) {
     // Will catch any promise rejections or thrown errors in the chain!
